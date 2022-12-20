@@ -4,22 +4,28 @@ body.appendChild(titulo);
 titulo.innerText = 'Paleta de Cores';
 titulo.id = 'title';
 
+const header = document.createElement('header');
+header.id = 'cabecalho';
+body.appendChild(header);
+
+const button = document.createElement('button');
+button.innerText = 'Sortear cores';
+button.id = 'button-random-color';
+header.appendChild(button);
+
 const section = document.createElement('section');
 section.id = 'color-palette';
-body.appendChild(section);
-const button = document.createElement('button');
-body.appendChild(button);
-button.innerText = 'Cores aleatórias';
-button.id = 'button-random-color';
+header.appendChild(section);
 
 const input = document.createElement('input');
 input.id = 'board-size';
 input.type = 'number';
 input.min = 1;
+input.max = 50;
 input.value = 0;
 const buttonInput = document.createElement('button');
 buttonInput.id = 'generate-board';
-buttonInput.innerText = 'VQV';
+buttonInput.innerText = 'Aplicar';
 body.appendChild(input);
 body.appendChild(buttonInput);
 
@@ -42,7 +48,7 @@ const pixelFrame = (quantidade) => {
   for (let index = 0; index < quantidade; index += 1) {
     const pixelInline = document.createElement('div');
     pixelInline.className = 'inline';
-    pixelInline.style.backgroundColor = 'white';
+    pixelInline.style.backgroundColor = 'violet';
     for (let index1 = 0; index1 < quantidade; index1 += 1) {
       const pixelBlock = document.createElement('div');
       pixelBlock.className = 'pixel';
@@ -95,30 +101,30 @@ const remetente = (event) => {
   const alvo = event.target;
   if (alvo === section.firstChild) {
     alvo.className = selectedCor;
-    // section.firstChild.nextSibling.className = 'color';
-    // section.firstChild.nextSibling.nextSibling.className = 'color';
-    // section.firstChild.nextSibling.nextSibling.nextSibling.className = 'color';
+    section.firstChild.nextSibling.className = 'color';
+    section.firstChild.nextSibling.nextSibling.className = 'color';
+    section.firstChild.nextSibling.nextSibling.nextSibling.className = 'color';
     selectedColor = 'black';
   }
   if (alvo === section.firstChild.nextSibling) {
     alvo.className = selectedCor;
-    // section.firstChild.className = 'color';
-    // section.firstChild.nextSibling.nextSibling.className = 'color';
-    // section.firstChild.nextSibling.nextSibling.nextSibling.className = 'color';
+    section.firstChild.className = 'color';
+    section.firstChild.nextSibling.nextSibling.className = 'color';
+    section.firstChild.nextSibling.nextSibling.nextSibling.className = 'color';
     selectedColor = corGenerate1;
   }
   if (alvo === section.firstChild.nextSibling.nextSibling) {
     alvo.className = selectedCor;
-    // section.firstChild.className = 'color';
-    // section.firstChild.nextSibling.className = 'color';
-    // section.firstChild.nextSibling.nextSibling.nextSibling.className = 'color';
+    section.firstChild.className = 'color';
+    section.firstChild.nextSibling.className = 'color';
+    section.firstChild.nextSibling.nextSibling.nextSibling.className = 'color';
     selectedColor = corGenerate2;
   }
   if (alvo === section.firstChild.nextSibling.nextSibling.nextSibling) {
     alvo.className = selectedCor;
-    // section.firstChild.className = 'color';
-    // section.firstChild.nextSibling.className = 'color';
-    // section.firstChild.nextSibling.nextSibling.className = 'color';
+    section.firstChild.className = 'color';
+    section.firstChild.nextSibling.className = 'color';
+    section.firstChild.nextSibling.nextSibling.className = 'color';
     selectedColor = corGenerate3;
   }
 };
@@ -178,10 +184,11 @@ window.onload = () => {
 };
 
 const pixelFrame1 = (number) => {
+  frame.innerHTML = '';
   for (let index = 0; index < number; index += 1) {
     const Linha = document.createElement('div');
     Linha.className = 'inline';
-    Linha.style.backgroundColor = 'white';
+    Linha.style.backgroundColor = 'violet';
     for (let index1 = 0; index1 < number; index1 += 1) {
       const cell = document.createElement('div');
       cell.className = 'pixel';
