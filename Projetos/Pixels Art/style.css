@@ -1,0 +1,60 @@
+body {
+  text-align: center;
+}
+
+#clear-board {
+  display: block;
+  margin-left: 608px;
+}
+
+#button-random-color {
+  margin-left: 580px;
+  display: block;
+}
+
+.color {
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+}
+
+div:nth-child(1) {
+  background-color: black;
+}
+
+div:nth-child(2) {
+  background-color: yellow;
+}
+
+div:nth-child(3) {
+  background-color: blue;
+}
+
+div:nth-child(4) {
+  background-color: red;
+}
+
+.inline {
+  height: 41px;
+  width: 100%;
+  display: block;
+}
+
+.pixel {
+  width: 40px;
+  height: 40px;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  display: inline-block;
+}
+
+.selected {
+  width: 40px;
+  height: 40px;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  display: inline-block;
+}
