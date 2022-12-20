@@ -1,0 +1,86 @@
+body {
+  text-align: center;
+  background-image: url(fundo.jpg);
+  background-size: 100%;
+}
+
+#title {
+  color: white;
+}
+
+#clear-board {
+  display: block;
+  margin: 10px 500px 10px 610px;
+  border: solid 2px;
+
+}
+
+#board-size {
+  width: 35px;
+  margin-left: 12px;
+}
+
+#button-random-color {
+  display: inline-block;
+  margin-right: 30px;
+  position: absolute;
+  top: 91px;
+  left: 450px;
+}
+
+#color-palette {
+  display: inline-block;
+}
+
+.color {
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  border-radius: 30%;
+  margin: 2px;
+}
+
+div:nth-child( 1 ) {
+  background-color: black;
+}
+
+div:nth-child( 2 )  {
+  background-color: yellow;
+}
+
+div:nth-child( 3 )  {
+  background-color: blue;
+}
+
+div:nth-child( 4 )  {
+  background-color: red;
+}
+
+
+.inline {
+  height: 21px;
+  width: 1102px;
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 82px;
+}
+
+.pixel {
+  width: 20px;
+  height: 20px;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  display: inline-block;
+}
+
+.selected {
+  width: 40px;
+  height: 40px;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  display: inline-block;
+};
