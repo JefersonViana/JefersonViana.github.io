@@ -1,11 +1,11 @@
 # Projeto Playground-functions
 
 Na construção deste projeto utilizei apenas `JavaScript` para criar diversas funções, dentre elas, função que gera número de telefone e função que ao receber 3 valores retorna se é possível ou não criar um triângulo com esses números.
-utilizer diversas ferramentas de JavaScript, como: `função`, `for`, `if/else`, `operadores`, `array`, `variáveis`, dentre outras.
+utilizei diversas ferramentas de JavaScript, como: `função`, `for`, `if/else`, `operadores`, `array`, `variáveis`, dentre outras.
 
 ## Aprendizados
 
-Com esse projeto consegui colocar em prática todo o conhecimento que tive sobre `JavaScript`.
+Com esse projeto consegui colocar em prática todo o conhecimento que obtive sobre `JavaScript`.
 
 ## Dificuldades
 
