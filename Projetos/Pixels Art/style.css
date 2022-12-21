@@ -17,7 +17,7 @@ body {
 
 #board-size {
   width: 35px;
-  margin-left: 12px;
+  margin-left: 0px;
 }
 
 #button-random-color {
@@ -25,11 +25,11 @@ body {
   margin-right: 30px;
   position: absolute;
   top: 91px;
-  left: 450px;
+  left: 420px;
 }
 
 #color-palette {
-  display: inline-block;
+  display: block;
 }
 
 .color {
